@@ -1,0 +1,1006 @@
+/*===========================================================================
+                            General Styles
+============================================================================*/
+
+body {
+    font-family: 'Tajawal', sans-serif;
+    color: #fff;
+}
+
+
+/*===========================================================================
+                        Bootstrap Edits Styles
+============================================================================*/
+
+
+/*===========================================================================
+                            My Basic Styles
+============================================================================*/
+
+
+/*********************** Header Section Start **********************/
+
+header {
+    background-color: #0046c3;
+}
+
+
+/* Start of Search  & Language Area */
+
+header .header-content {
+    padding: 15px 0px 25px 0px;
+}
+
+header .header-content .search-lang {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+header .header-content .search-lang .serach-bar {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+header .header-content .search-lang .serach-bar .cat-button {
+    background-color: #ff711f;
+    border: none;
+    outline: 0;
+    width: 140px;
+    height: 40px;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: "ta-bold";
+    font-size: 14px;
+    padding: 10px;
+}
+
+header .header-content .search-lang .serach-bar .cat-button::after {
+    content: '\f078';
+    font-family: 'Font Awesome 5 Free';
+    font-style: normal;
+    font-weight: 800;
+    text-decoration: inherit;
+    margin-left: 10px;
+}
+
+header .header-content .search-lang .serach-bar input {
+    width: 300px;
+    outline: 0;
+    border: none;
+    font-family: "ta-regular";
+    font-size: 16px;
+    padding: 0px 20px;
+    color: #000;
+}
+
+header .header-content .search-lang .serach-bar input::after {
+    content: '\f078';
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    margin-left: 10px;
+}
+
+header .header-content .search-lang .serach-bar input::placeholder {
+    font-family: "ta-regular";
+    font-size: 16px;
+}
+
+header .header-content .search-lang .serach-bar .search-button {
+    background-color: transparent;
+    outline: 0;
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #ff711f;
+}
+
+header .header-content .search-lang .language,
+header .header-content .search-lang .currency {
+    margin-right: 20px;
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    text-transform: uppercase;
+    font-family: "ta-bold";
+    font-size: 14px;
+    transition: all 0.4s ease-in-out;
+}
+
+header .header-content .search-lang .language:hover,
+header .header-content .search-lang .currency:hover {
+    color: #ff711f;
+}
+
+header .header-content .search-lang .language option,
+header .header-content .search-lang .currency option {
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+}
+
+
+/* Start of Social & User Data Area */
+
+header .header-content .user-data {
+    padding-top: 35px;
+}
+
+header .header-content .user-data .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    text-align: right;
+}
+
+header .header-content .user-data .social button {
+    background-color: transparent;
+    outline: 0;
+    border: none;
+    margin-right: 30px;
+    display: none;
+    transition: all 0.4s ease-in-out;
+}
+
+header .header-content .user-data .social button:hover i {
+    color: #ff711f;
+}
+
+header .header-content .user-data .social .user-config,
+header .header-content .user-data .social .like {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 30px;
+    transition: all 0.4s ease-in-out;
+    padding: 5px 0 0;
+}
+
+header .header-content .user-data .social .shop-cart .shop {
+    position: relative;
+    margin-right: 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    transition: all 0.4s ease-in-out;
+}
+
+header .header-content .user-data .social .user-config:hover,
+header .header-content .user-data .social .like:hover,
+header .header-content .user-data .social .shop-cart .shop:hover {
+    color: #ff711f;
+}
+
+header .header-content .user-data .social .shop-cart .shop span {
+    position: absolute;
+    bottom: 14px;
+    left: 14px;
+    width: 15px;
+    height: 15px;
+    background-color: #ff711f;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 15px;
+    font-family: "ta-bold";
+    font-size: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+header .header-content .user-data .social .shop-cart .shop:hover span {
+    color: #ff711f;
+    background-color: #fff;
+}
+
+
+/*********************** Nav Section Start **********************/
+
+nav {
+    background-color: #003faf;
+}
+
+nav .nav-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+/* Start Shop by Item */
+
+nav .nav-items .nav-links {
+    display: flex;
+    flex-direction: row;
+}
+
+nav .nav-items .nav-links .shop-by-item {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    text-decoration: none;
+    background-color: #00399d;
+    padding: 10px 25px 0px;
+    width: 210px;
+    text-align: center;
+}
+
+nav .nav-items .nav-links .shop-by-item ul {
+    width: 20px;
+    height: 20px;
+    padding-top: 3px;
+    margin-right: 10px;
+}
+
+nav .nav-items .nav-links .shop-by-item ul li span {
+    width: 18px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 3px;
+    display: block;
+    transition: all 0.4s ease-in-out;
+}
+
+nav .nav-items .nav-links .shop-by-item p {
+    text-transform: uppercase;
+    font-family: "ta-bold";
+    font-size: 16px;
+    transition: all 0.4s ease-in-out;
+}
+
+nav .nav-items .nav-links .shop-by-item:hover ul li span {
+    background-color: #ff711f;
+}
+
+nav .nav-items .nav-links .shop-by-item:hover p {
+    color: #ff711f;
+}
+
+
+/* Start Nav Links */
+
+nav .nav-items .nav-links .nav-links-items {
+    padding-top: 10px;
+    margin-left: 30px;
+}
+
+nav .nav-items .nav-links .nav-links-items ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav .nav-items .nav-links .nav-links-items ul li {
+    margin-right: 30px;
+}
+
+nav .nav-items .nav-links .nav-links-items ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "ta-medium";
+    font-size: 16px;
+    transition: all 0.4s ease-in-out;
+}
+
+nav .nav-items .nav-links .nav-links-items ul li:hover a {
+    color: #ff711f;
+}
+
+
+/* Start Hot Line */
+
+nav .nav-items .hot-line {
+    text-transform: uppercase;
+    font-family: "ta-bold";
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+nav .nav-items .hot-line a {
+    color: #ff711f;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+
+/*********************** Main Slider Section Start **********************/
+
+.main-slider .item {
+    position: relative;
+}
+
+.main-slider .item .item-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.main-slider .item .item-layer .item-content {
+    position: relative;
+    top: 20%;
+}
+
+.main-slider .item .item-layer .item-content h3 {
+    font-family: "mo-regular";
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.main-slider .item .item-layer .item-content h2 {
+    font-family: "mo-extra-bold";
+    font-size: 72px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.main-slider .item .item-layer .item-content a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: "mo-semi-bold";
+    font-size: 18px;
+    background-color: #ff711f;
+    width: 180px;
+    height: 50px;
+    padding: 10px 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.main-slider .item .item-layer .item-content a:hover {
+    background-color: #fff;
+    color: #ff711f;
+}
+
+
+/* Owl Carousel Nav */
+
+.main-slider .owl-carousel .owl-nav .owl-prev,
+.main-slider .owl-carousel .owl-nav .owl-next {
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    outline: 0px;
+}
+
+.main-slider .owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: 45%;
+    left: 10px;
+}
+
+.main-slider .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 45%;
+    right: 10px;
+}
+
+.main-slider .owl-carousel .owl-nav .owl-prev i,
+.main-slider .owl-carousel .owl-nav .owl-next i {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: all 0.4s ease-in-out;
+}
+
+.main-slider .owl-carousel .owl-nav .owl-prev i:hover,
+.main-slider .owl-carousel .owl-nav .owl-next i:hover {
+    background-color: #ff711f;
+    color: #fff;
+}
+
+.main-slider .owl-carousel .owl-dots {
+    position: absolute;
+    bottom: 5%;
+    left: 47%;
+}
+
+.main-slider .owl-carousel button.owl-dot {
+    outline: 0;
+}
+
+.main-slider .owl-carousel button.owl-dot span {
+    background-color: #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+.main-slider .owl-carousel .owl-dots .owl-dot:hover span {
+    background-color: #ff711f;
+}
+
+.main-slider .owl-carousel .owl-dots .owl-dot.active span {
+    background-color: #ff711f;
+}
+
+
+/*********************** Categories Section Start **********************/
+
+.cat {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.cat .cat-item {
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+}
+
+.cat .cat-item a {
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+}
+
+.cat .cat-item img {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    transition: all 0.4s ease-in-out;
+}
+
+.cat .cat-item span {
+    text-align: center;
+    margin-top: 20px;
+    font-family: "ta-bold";
+    font-size: 18px;
+    transition: all 0.4s ease-in-out;
+}
+
+.cat .cat-item:hover span {
+    color: #ff711f;
+}
+
+.cat .cat-item:hover img {
+    filter: invert(74%) sepia(87%) saturate(4889%) hue-rotate(346deg) brightness(102%) contrast(101%);
+}
+
+.cat .owl-carousel .owl-nav .owl-prev,
+.cat .owl-carousel .owl-nav .owl-next {
+    margin: 0px;
+    outline: 0px;
+    width: 30px;
+    height: 30px;
+}
+
+.cat .owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: 30%;
+    left: -35px;
+}
+
+.cat .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 30%;
+    right: -35px;
+}
+
+.cat .owl-carousel .owl-nav .owl-prev i,
+.cat .owl-carousel .owl-nav .owl-next i {
+    color: #aaa;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: block;
+    transition: all 0.4s ease-in-out;
+}
+
+.cat .owl-carousel .owl-nav .owl-prev:hover i,
+.cat .owl-carousel .owl-nav .owl-next:hover i {
+    color: #fff;
+}
+
+
+/*********************** Offers Section Start **********************/
+
+.offers .img-box,
+.offers .img-box2,
+.offers .img-box-center {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.offers .img-box .big-anc,
+.offers .img-box2 .big-anc,
+.offers .img-box-center .big-anc {
+    color: #fff;
+    text-decoration: none;
+}
+
+.offers .img-box img,
+.offers .img-box2 img,
+.offers .img-box-center img {
+    width: 100%;
+}
+
+.offers .img-box .inner-content,
+.offers .img-box2 .inner-content,
+.offers .img-box-center .inner-content {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    width: 95%;
+    height: 100%;
+    text-transform: uppercase;
+    padding: 90px 50px 20px;
+}
+
+.offers .img-box .inner-content h2,
+.offers .img-box2 .inner-content h2 {
+    font-family: "mo-extra-bold";
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.offers .img-box .inner-content .inner-anc,
+.offers .img-box2 .inner-content .inner-anc {
+    color: #fff;
+    text-decoration: none;
+    background-color: #ff711f;
+    padding: 10px 20px;
+    transition: all 0.4s ease-in-out;
+    font-family: "mo-semi-bold";
+    font-size: 16px;
+    transition: all 0.4s ease-in-out;
+}
+
+.offers .img-box .inner-content .inner-anc:hover,
+.offers .img-box2 .inner-content .inner-anc:hover {
+    color: #ff711f;
+    background-color: #fff;
+}
+
+.offers .img-box2 .inner-content {
+    width: 90%;
+    text-align: center;
+    padding: 120px 10px 20px;
+}
+
+.offers .img-box2 .inner-content h2 {
+    font-size: 24px;
+}
+
+.offers .img-box2 .inner-content .inner-anc {
+    font-size: 13px;
+}
+
+.offers .img-box-center .inner-content {
+    text-align: center;
+    padding: 30px 10px 20px;
+}
+
+.offers .img-box-center .inner-content h3 {
+    font-family: "mo-regular";
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.offers .img-box-center .inner-content hr {
+    border: 1px solid #fff;
+    display: block;
+    width: 7%;
+    margin: 0px auto;
+}
+
+.offers .img-box-center .inner-content h2 {
+    font-family: "mo-bold";
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+
+/*********************** Best Sellers Section Start **********************/
+
+.best-sellers {
+    margin-top: 60px;
+    color: #000;
+}
+
+.best-sellers h3 {
+    margin-bottom: 50px;
+    font-family: "ta-extra-bold";
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.best-sellers .my-car-item {
+    width: 100%;
+    height: 100%;
+}
+
+.best-sellers .my-car-item a {
+    color: #000;
+    text-decoration: none;
+}
+
+.best-sellers .my-car-item .mycar-img-box {
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.best-sellers .my-car-item .mycar-img-box img {
+    width: 100%;
+}
+
+.best-sellers .my-car-item .mycar-img-box .new,
+.best-sellers .my-car-item .mycar-img-box .discount {
+    position: absolute;
+    display: block;
+    padding: 0px 10px;
+    color: #fff;
+    font-family: "ta-bold";
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.best-sellers .my-car-item .mycar-img-box .new {
+    top: 10px;
+    right: 10px;
+    background-color: #0046c3;
+}
+
+.best-sellers .my-car-item .mycar-img-box .discount {
+    top: 10px;
+    left: 10px;
+    background-color: #ff711f;
+}
+
+.best-sellers .my-car-item .mycar-text-box {
+    margin-left: 10px;
+}
+
+.best-sellers .my-car-item .mycar-text-box .item-name {
+    font-family: "ta-regular";
+    font-size: 17px;
+    height: 30px;
+}
+
+.best-sellers .my-car-item .mycar-text-box .item-price {
+    color: #ff711f;
+    font-family: "ta-bold";
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.best-sellers .my-car-item .mycar-text-box .item-price span {
+    text-decoration: line-through;
+    color: #b2b2b2;
+    font-family: "ta-medium";
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.best-sellers .owl-carousel .owl-nav .owl-prev,
+.best-sellers .owl-carousel .owl-nav .owl-next {
+    margin: 0px;
+    outline: 0px;
+    width: 30px;
+    height: 30px;
+}
+
+.best-sellers .owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: 30%;
+    left: -35px;
+}
+
+.best-sellers .owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 30%;
+    right: -35px;
+}
+
+.best-sellers .owl-carousel .owl-nav .owl-prev i,
+.best-sellers .owl-carousel .owl-nav .owl-next i {
+    color: #aaa;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: block;
+    transition: all 0.4s ease-in-out;
+}
+
+.best-sellers .owl-carousel .owl-nav .owl-prev:hover i,
+.best-sellers .owl-carousel .owl-nav .owl-next:hover i {
+    color: #fff;
+}
+
+
+/*********************** Big Offer Section Start **********************/
+
+.big-offer {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.big-offer img {
+    width: 100%;
+}
+
+.big-offer .big-offer-content {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.big-offer .big-offer-content h3 {
+    font-family: "mo-regular";
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.big-offer .big-offer-content hr {
+    display: block;
+    border: 1px solid #fff;
+    width: 7%;
+    margin: 0px auto;
+}
+
+.big-offer .big-offer-content h2 {
+    font-family: "mo-bold";
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+
+.big-offer .big-offer-content a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #ff711f;
+    font-family: "mo-semi-bold";
+    font-size: 18px;
+    padding: 10px 40px;
+    transition: all 0.4s ease-in-out;
+}
+
+.big-offer .big-offer-content a:hover {
+    background-color: #fff;
+    color: #ff711f;
+}
+
+
+/*********************** Taps Section Start **********************/
+
+.best-sellers .mo-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.best-sellers .mo-tabs li {
+    margin-right: 30px;
+}
+
+.best-sellers .mo-tabs li a {
+    color: #000;
+    text-decoration: none;
+    font-family: "ta-extra-bold";
+    font-size: 30px;
+    text-transform: uppercase;
+    transition: all 0.4s ease-in-out;
+}
+
+.best-sellers .mo-tabs li:hover a {
+    color: #ff711f;
+    text-decoration: underline;
+}
+
+.best-sellers .mo-tabs li.active a {
+    color: #ff711f;
+    text-decoration: underline;
+}
+
+
+/*********************** Features Section Start **********************/
+
+.features {
+    color: #000;
+    margin-top: 130px;
+    background-color: #fafafa;
+    padding: 70px 0;
+}
+
+.features .feature {
+    display: flex;
+    flex-direction: column;
+}
+
+.features .feature .icon {
+    font-size: 24px;
+    color: #ff711f;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.features .feature .fe-head {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.features .feature .feature-name {
+    font-family: "ta-medium";
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.features .feature p {
+    font-family: "ta-regular";
+    font-size: 16px;
+    color: #b0b0b0;
+    margin-left: 33px;
+    text-transform: capitalize;
+}
+
+
+/*********************** Footer Section Start **********************/
+
+footer {
+    background-color: #0046c3;
+    padding: 70px 0;
+}
+
+footer .footer-top {
+    margin-bottom: 80px;
+}
+
+footer .footer-top h3 {
+    margin-bottom: 30px;
+    font-family: "ta-bold";
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+footer .footer-top .footer-links li {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+footer .footer-top .footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "ta-regular";
+    font-size: 16px;
+    transition: all 0.4s ease-in-out;
+}
+
+footer .footer-top .footer-links li:hover a {
+    color: #ff711f;
+}
+
+footer .footer-top .your-mail {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+footer .footer-top .your-mail input {
+    width: 350px;
+    height: 40px;
+    padding: 15px;
+    border: none;
+    outline: 0;
+    background-color: #fff;
+    color: #000;
+    font-family: "ta-medium";
+    font-size: 16px;
+}
+
+footer .footer-top .your-mail input::placeholder {
+    font-family: "ta-regular";
+    font-size: 16px;
+}
+
+footer .footer-top .your-mail button {
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    background-color: transparent;
+    outline: 0;
+    border: none;
+    color: #0046c3;
+}
+
+footer .footer-top .your-mail button span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer .footer-top .social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer .footer-top .social-icons li {
+    margin-right: 20px;
+}
+
+footer .footer-top .social-icons li a {
+    text-decoration: none;
+}
+
+footer .footer-top .social-icons li i {
+    width: 40px;
+    height: 40px;
+    background-color: #003ca6;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    transition: all 0.4s ease-in-out;
+}
+
+footer .footer-top .social-icons li:hover i {
+    background-color: #ff711f;
+}
+
+
+/*footer bottom*/
+
+footer .footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .footer-bottom .copyrightes {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .footer-bottom .copyrightes p {
+    font-family: "ta-light";
+    font-size: 15px;
+    margin-right: 7px;
+    padding-top: 5px;
+}
+
+footer .footer-bottom .copyrightes img {
+    width: 50px;
+    height: 25px;
+}
+
+
+/*========================= Display Class ============================*/
+
+.display {
+    display: block;
+}
+
+
+/*=======================================================================
+                                Loading Overlay 
+========================================================================= */
+
+.loading-overlay {
+    background: #ccc;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+}
+
+.loading-overlay img {
+    position: fixed;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

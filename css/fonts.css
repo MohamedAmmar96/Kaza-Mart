@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "ta-black";
+    src: url("../webfonts/Tajawal/Tajawal-Black.ttf")
+}
+
+@font-face {
+    font-family: "ta-bold";
+    src: url("../webfonts/Tajawal/Tajawal-Bold.ttf")
+}
+
+@font-face {
+    font-family: "ta-extra-bold";
+    src: url("../webfonts/Tajawal/Tajawal-ExtraBold.ttf")
+}
+
+@font-face {
+    font-family: "ta-extra-light";
+    src: url("../webfonts/Tajawal/Tajawal-ExtraLight.ttf")
+}
+
+@font-face {
+    font-family: "ta-light";
+    src: url("../webfonts/Tajawal/Tajawal-Light.ttf")
+}
+
+@font-face {
+    font-family: "ta-medium";
+    src: url("../webfonts/Tajawal/Tajawal-Medium.ttf")
+}
+
+@font-face {
+    font-family: "ta-regular";
+    src: url("../webfonts/Tajawal/Tajawal-Regular.ttf")
+}
+
+
+/* Montserrat Font family */
+
+@font-face {
+    font-family: "mo-black";
+    src: url("../webfonts/Montserrat/Montserrat-Black.ttf")
+}
+
+@font-face {
+    font-family: "mo-black-italic";
+    src: url("../webfonts/Montserrat/Montserrat-BlackItalic.ttf")
+}
+
+@font-face {
+    font-family: "mo-bold";
+    src: url("../webfonts/Montserrat/Montserrat-Bold.ttf")
+}
+
+@font-face {
+    font-family: "mo-bold-italic";
+    src: url("../webfonts/Montserrat/Montserrat-BoldItalic.ttf")
+}
+
+@font-face {
+    font-family: "mo-extra-bold";
+    src: url("../webfonts/Montserrat/Montserrat-ExtraBold.ttf")
+}
+
+@font-face {
+    font-family: "mo-extra-bold-italic";
+    src: url("../webfonts/Montserrat/Montserrat-ExtraBoldItalic.ttf")
+}
+
+@font-face {
+    font-family: "mo-extra-light";
+    src: url("../webfonts/Montserrat/Montserrat-ExtraLight.ttf")
+}
+
+@font-face {
+    font-family: "mo-extra-light-italic";
+    src: url("../webfonts/Montserrat/Montserrat-ExtraLightItalic.ttf")
+}
+
+@font-face {
+    font-family: "mo-italic";
+    src: url("../webfonts/Montserrat/Montserrat-Italic.ttf")
+}
+
+@font-face {
+    font-family: "mo-light";
+    src: url("../webfonts/Montserrat/Montserrat-Light.ttf")
+}
+
+@font-face {
+    font-family: "mo-light-italic";
+    src: url("../webfonts/Montserrat/Montserrat-LightItalic.ttf")
+}
+
+@font-face {
+    font-family: "mo-medium";
+    src: url("../webfonts/Montserrat/Montserrat-Medium.ttf")
+}
+
+@font-face {
+    font-family: "mo-medium-italic";
+    src: url("../webfonts/Montserrat/Montserrat-MediumItalic.ttf")
+}
+
+@font-face {
+    font-family: "mo-regular";
+    src: url("../webfonts/Montserrat/Montserrat-Regular.ttf")
+}
+
+@font-face {
+    font-family: "mo-semi-bold";
+    src: url("../webfonts/Montserrat/Montserrat-SemiBold.ttf")
+}
+
+@font-face {
+    font-family: "mo-semi-bold-italic";
+    src: url("../webfonts/Montserrat/Montserrat-SemiBoldItalic.ttf")
+}
+
+@font-face {
+    font-family: "mo-thin";
+    src: url("../webfonts/Montserrat/Montserrat-Thin.ttf")
+}
+
+@font-face {
+    font-family: "mo-thin-italic";
+    src: url("../webfonts/Montserrat/Montserrat-ThinItalic.ttf")
+}
