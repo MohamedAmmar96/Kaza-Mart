@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/Linearicons.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -34,46 +36,71 @@
             <div class="header-content">
                 <div class="row">
 
-                    <div class="logo col-lg-3 col-md-6 col-xs-6">
-                        <img class="logo-img" src="images/logo/logo.png">
+                    <div class="col-lg-3 col-md-3 col-xs-6">
+                        <div class="logo">
+                            <img class="logo-img wow animate__fadeInUpBig" data-wow-duration="1.5s" src="images/logo/logo.png">
+                        </div>
                     </div>
 
-                    <div class="search-lang col-lg-7 hidden-md hidden-sm hidden-xs">
+                    <div class="search-lang col-md-7 hidden-sm hidden-xs">
 
-                        <div class="serach-bar">
-                            <button class="cat-button">all categories</button>
+                        <div class="serach-bar wow animate__fadeInUpBig" data-wow-duration="1.6s">
+                            <select class="cat-button selectpicker" title="all categories">
+                                <option>bedroom</option>
+                                <option>sofas</option>
+                                <option>dining room</option>
+                                <option>rest room</option>
+                                <option>armchairs</option>
+                                <option>librarry room</option>
+                                <option>chairs</option>
+                                <option>tables</option>
+                                <option>living room</option>
+                                <option>kids room</option>
+                                <option>outroom</option>
+                            </select>
                             <input type="search" placeholder="Search">
                             <button class="search-button"><i class="fa fa-search"></i></button>
                         </div>
+                        <div class="wow animate__fadeInUpBig" data-wow-duration="1.7s">
+                            <select class="language selectpicker" data-width="fit">
+                                <option value="english">english</option>
+                                <option value="arabic">العربية</option>
+                            </select>
+                        </div>
+                        <div class="wow animate__fadeInUpBig" data-wow-duration="1.8s">
+                            <select class="currency selectpicker" data-width="fit">
+                                <option value="riyal">saudi riyal</option>
+                                <option value="bound">egy bound</option>
+                                <option value="dollar">usa dollar</option>
+                            </select>
+                        </div>
 
-                        <select class="language">
-                            <option value="english">english</option>
-                            <option value="arabic">العربية</option>
-                        </select>
-
-                        <select class="currency">
-                            <option value="riyal">saudi riyal</option>
-                            <option value="bound">egy bound</option>
-                        </select>
 
                     </div>
 
-                    <div class="user-data col-lg-2 col-md-6 col-xs-6">
+                    <div class="user-data col-lg-2 col-md-2 col-xs-6">
 
-                        <div class="social">
-                            <button><i class="fas fa-bars fa-2x"></i></button>
+                        <div class="social wow animate__fadeInUpBig" data-wow-duration="1.9s">
+
+                            <button class="search-hidden"><i class="fa fa-search"></i></button>
+
+                            <button class="hidden-button"><i class="fas fa-bars fa-2x"></i></button>
+
                             <a class="user-config" href="#">
                                 <i class="far fa-user fa-lg"></i>
                             </a>
+
                             <a class="like" href="#">
                                 <i class="far fa-heart fa-lg"></i>
                             </a>
+
                             <div class="shop-cart">
                                 <a class="shop" href="#">
                                     <i class="lnr lnr-cart"></i>
-                                    <span>0</span>
+                                    <span class="counter">0</span>
                                 </a>
                             </div>
+
                         </div>
 
                     </div>
@@ -90,42 +117,49 @@
             <div class="nav-items">
 
                 <div class="nav-links">
-                    <a class="shop-by-item" href="#">
+                    <div class="shop-by-room wow animate__fadeInUpBig" data-wow-duration="2s">
+                        <a class="shop-by-link" href="#">
+                            <i class="fas fa-bars fa-2x"></i>
+                            <p>shop by room</p>
+                        </a>
                         <ul class="list-unstyled">
-                            <li><span></span></li>
-                            <li><span></span></li>
-                            <li><span></span></li>
+                            <li><a href="#">bedroom</a></li>
+                            <li><a href="#">rest room</a></li>
+                            <li><a href="#">dining room</a></li>
+                            <li><a href="#">living room</a></li>
+                            <li><a href="#">Librarry room</a></li>
+                            <li><a href="#">Kids room</a></li>
+                            <li><a href="#">Outroom</a></li>
                         </ul>
-                        <p>shop by room</p>
-                    </a>
+                    </div>
 
                     <div class="nav-links-items">
                         <ul class="list-unstyled">
-                            <li><a href="#">Shop by Product</a></li>
-                            <li><a href="#">Decoration</a></li>
-                            <li><a href="#">Turn Key Project</a></li>
-                            <li><a href="#">Custome Made</a></li>
-                            <li><a href="#">Need Help?</a></li>
+                            <li class="wow animate__fadeInUpBig" data-wow-duration="2s"><a href="#">Shop by Product</a></li>
+                            <li class="wow animate__fadeInUpBig" data-wow-duration="2.1s"><a href="#">Decoration</a></li>
+                            <li class="wow animate__fadeInUpBig" data-wow-duration="2.2s"><a href="#">Turn Key Project</a></li>
+                            <li class="wow animate__fadeInUpBig" data-wow-duration="2.3s"><a href="#">Custome Made</a></li>
+                            <li class="wow animate__fadeInUpBig" data-wow-duration="2.4s"><a href="#">Need Help?</a></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="hot-line">hot line<a href="#" type="tel">920000000</a></div>
+                <div class="hot-line wow animate__fadeInUpBig" data-wow-duration="2.4s">hot line <a href="#" type="tel">920000000</a></div>
             </div>
         </div>
     </nav>
 
     <!-------------------------------- Start Main Carousel Section ---------------------------------->
     <div class="main-slider">
-        <div id="main-slider" class="owl-carousel owl-theme">
+        <div id="main-slider" class="owl-carousel owl-theme wow animate__fadeInUpBig" data-wow-duration="2.2s">
 
             <div class="item">
-                <img src="images/main-slider/noblack.png">
+                <img src="images/main-slider/noblack.png" class="wow animate__fadeInUpBig" data-wow-duration="2s">
                 <div class="item-layer">
                     <div class="item-content">
-                        <h3>new arrivals</h3>
-                        <h2 class="h1">contemporary<br>and modern sofa</h2>
-                        <a href="#">shop now</a>
+                        <h3 class="wow animate__fadeInUpBig" data-wow-duration="2.4s">new arrivals</h3>
+                        <h2 class="h1 wow animate__fadeInUpBig" data-wow-duration="2.6s">contemporary<br>and modern sofa</h2>
+                        <a class="wow animate__fadeInUpBig" data-wow-duration="2.8s" href="#">shop now</a>
                     </div>
                 </div>
             </div>
@@ -171,67 +205,85 @@
     <div class="container">
 
         <div class="cat">
-            <div id="cat" class="owl-carousel owl-theme">
+            <div id="cat" class="owl-carousel owl-theme wow animate__fadeInUpBig" data-wow-duration="2s">
 
-                <div class="cat-item">
+                <div class="cat-item wow animate__fadeInUpBig" data-wow-duration="2s">
                     <a class="cat-link" href="#">
-                        <img class="img-responsive" src="images/parts/1.png" alt="cat1">
+                        <div class="cat-image">
+                            <img class="img-responsive" src="images/parts/1.png" alt="cat1">
+                        </div>
                         <span>sofa</span>
                     </a>
                 </div>
 
-                <div class="cat-item">
+                <div class="cat-item wow animate__fadeInUpBig" data-wow-duration="2.1s">
                     <a class="cat-link" href="#">
-                        <img class="img-responsive" src="images/parts/2.png" alt="cat2">
+                        <div class="cat-image">
+                            <img class="img-responsive" src="images/parts/2.png" alt="cat2">
+                        </div>
                         <span>armchair</span>
                     </a>
                 </div>
 
-                <div class="cat-item">
+                <div class="cat-item wow animate__fadeInUpBig" data-wow-duration="2.2s">
                     <a class="cat-link" href="#">
-                        <img class="img-responsive" src="images/parts/3.png" alt="cat3">
+                        <div class="cat-image">
+                            <img class="img-responsive" src="images/parts/3.png" alt="cat3">
+                        </div>
                         <span>chair</span>
                     </a>
                 </div>
 
-                <div class="cat-item">
+                <div class="cat-item wow animate__fadeInUpBig" data-wow-duration="2.3s">
                     <a class="cat-link" href="#">
-                        <img class="img-responsive" src="images/parts/4.png" alt="cat4">
+                        <div class="cat-image">
+                            <img class="img-responsive" src="images/parts/4.png" alt="cat4">
+                        </div>
                         <span>tabels</span>
                     </a>
                 </div>
 
-                <div class="cat-item">
+                <div class="cat-item wow animate__fadeInUpBig" data-wow-duration="2.4s">
                     <a class="cat-link" href="#">
-                        <img class="img-responsive" src="images/parts/5.png" alt="cat5">
+                        <div class="cat-image">
+                            <img class="img-responsive" src="images/parts/5.png" alt="cat5">
+                        </div>
                         <span>coffee table</span>
                     </a>
                 </div>
 
-                <div class="cat-item">
+                <div class="cat-item wow animate__fadeInUpBig" data-wow-duration="2.5s">
                     <a class="cat-link" href="#">
-                        <img class="img-responsive" src="images/parts/6.png" alt="cat6">
+                        <div class="cat-image">
+                            <img class="img-responsive" src="images/parts/6.png" alt="cat6">
+                        </div>
                         <span>side table</span>
                     </a>
                 </div>
 
-                <div class="cat-item">
+                <div class="cat-item wow animate__fadeInUpBig" data-wow-duration="2.6s">
                     <a class="cat-link" href="#">
-                        <img class="img-responsive" src="images/parts/7.png" alt="cat7">
+                        <div class="cat-image">
+                            <img class="img-responsive" src="images/parts/7.png" alt="cat7">
+                        </div>
                         <span>desks</span>
                     </a>
                 </div>
 
-                <div class="cat-item">
+                <div class="cat-item wow animate__fadeInUpBig" data-wow-duration="2.7s">
                     <a class="cat-link" href="#">
-                        <img class="img-responsive" src="images/parts/8.png" alt="cat8">
+                        <div class="cat-image">
+                            <img class="img-responsive" src="images/parts/8.png" alt="cat8">
+                        </div>
                         <span>consoles</span>
                     </a>
                 </div>
 
                 <div class="cat-item">
                     <a class="cat-link" href="#">
-                        <img class="img-responsive" src="images/parts/3.png" alt="cat3">
+                        <div class="cat-image">
+                            <img class="img-responsive" src="images/parts/3.png" alt="cat3">
+                        </div>
                         <span>chair</span>
                     </a>
                 </div>
@@ -245,59 +297,67 @@
             <!------------------ Row One --------------------->
             <div class="row">
 
-                <div class="img-box col-md-6 col-xs-12">
-                    <a class="big-anc" href="#">
+                <div class="col-md-6 col-xs-12">
+                    <div class="img-box wow animate__fadeInUpBig" data-wow-duration="2s">
+                        <div class="big-anc"></div>
                         <img class="img-responsive" src="images/gallary/1.png">
                         <div class="inner-content">
-                            <h2>modern bedrooms<br>loved by many</h2>
-                            <a class="inner-anc" href="#">shop now</a>
+                            <h2 class="wow animate__fadeInUpBig" data-wow-duration="2.2s">modern bedrooms<br>loved by many</h2>
+                            <a class="inner-anc wow animate__fadeInUpBig" data-wow-duration="2.4s" href="#">shop now</a>
                         </div>
-                    </a>
+                    </div>
                 </div>
 
-                <div class="img-box col-md-6 col-xs-12">
-                    <a class="big-anc" href="#">
+                <div class="col-md-6 col-xs-12">
+                    <div class="img-box wow animate__fadeInUpBig" data-wow-duration="2s">
+                        <div class="big-anc"></div>
                         <img class="img-responsive" src="images/gallary/2.png">
                         <div class="inner-content">
-                            <h2>your kids room<br>must be awesome</h2>
-                            <a class="inner-anc" href="#">shop now</a>
+                            <h2 class="wow animate__fadeInUpBig" data-wow-duration="2.2s">your kids room<br>must be awesome</h2>
+                            <a class="inner-anc wow animate__fadeInUpBig" data-wow-duration="2.4s" href="#">shop now</a>
                         </div>
-                    </a>
+                    </div>
                 </div>
 
             </div>
             <!------------------ Row Two --------------------->
             <div class="row">
+                <div class="perior">
 
-                <div class="img-box2 col-md-3 col-xs-12">
-                    <a class="big-anc" href="#">
-                        <img class="img-responsive" src="images/gallary/3.png">
-                        <div class="inner-content">
-                            <h2>coffe table<br>for living room</h2>
-                            <a class="inner-anc" href="#">shop now</a>
+                    <div class="per1 col-md-3 col-xs-12">
+                        <div class="img-box2 wow animate__fadeInUpBig" data-wow-duration="2s">
+                            <div class="big-anc"></div>
+                            <img class="img-responsive" src="images/gallary/3.png">
+                            <div class="inner-content">
+                                <h2 class="wow animate__fadeInUpBig" data-wow-duration="2.2s">coffe table<br>for living room</h2>
+                                <a class="inner-anc wow animate__fadeInUpBig" data-wow-duration="2.4s" href="#">shop now</a>
+                            </div>
                         </div>
-                    </a>
-                </div>
+                    </div>
 
-                <div class="img-box-center col-md-6 col-xs-12">
-                    <a class="big-anc" href="#">
-                        <img class="img-responsive" src="images/gallary/4.png">
-                        <div class="inner-content">
-                            <h3>limited period</h3>
-                            <hr>
-                            <h2>great offers<br>up to 25%</h2>
+                    <div class="per2 col-md-6 col-xs-12">
+                        <div class="img-box-center wow animate__zoomIn" data-wow-duration="2s">
+                            <a href="#">
+                                <img class="img-responsive" src="images/gallary/4.png">
+                                <div class="inner-content">
+                                    <h3 class="wow animate__zoomIn" data-wow-duration="2.2s">limited period</h3>
+                                    <hr class="wow animate__zoomIn" data-wow-duration="2.2s">
+                                    <h2 class="wow animate__zoomIn" data-wow-duration="2.4s">great offers<br>up to 25%</h2>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
+                    </div>
 
-                <div class="img-box2 col-md-3 col-xs-12">
-                    <a class="big-anc" href="#">
-                        <img class="img-responsive" src="images/gallary/5.png">
-                        <div class="inner-content">
-                            <h2>coffe table<br>for living room</h2>
-                            <a class="inner-anc" href="#">shop now</a>
+                    <div class="per3 col-md-3 col-xs-12">
+                        <div class="img-box2 wow animate__fadeInUpBig" data-wow-duration="2s">
+                            <div class="big-anc"></div>
+                            <img class="img-responsive" src="images/gallary/5.png">
+                            <div class="inner-content">
+                                <h2 class="wow animate__fadeInUpBig" data-wow-duration="2.2s">coffe table<br>for living room</h2>
+                                <a class="inner-anc wow animate__fadeInUpBig" data-wow-duration="2.4s" href="#">shop now</a>
+                            </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
 
             </div>
@@ -306,11 +366,11 @@
         <!------------------------------- Best Sellers Section Start ------------------------------------>
         <div class="best-sellers">
 
-            <h3 class="text-center">bestsellers</h3>
+            <h3 class="text-center wow animate__fadeInUpBig" data-wow-duration="2s">bestsellers</h3>
 
             <div id="best-sellers" class="owl-carousel owl-theme">
 
-                <div class="my-car-item">
+                <div class="my-car-item wow animate__fadeInUpBig" data-wow-duration="2s">
                     <a href="#">
                         <div class="mycar-img-box">
                             <img class="img-responsive" src="images/bestsellers/1.png" alt="product 1">
@@ -328,7 +388,7 @@
 
                 <div class="my-car-item">
                     <a href="#">
-                        <div class="mycar-img-box">
+                        <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2.1s">
                             <img class="img-responsive" src="images/bestsellers/2.png" alt="product 2">
                             <span class="new">new</span>
                             <span class="discount">sale</span>
@@ -344,7 +404,7 @@
 
                 <div class="my-car-item">
                     <a href="#">
-                        <div class="mycar-img-box">
+                        <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2.2s">
                             <img class="img-responsive" src="images/bestsellers/3.png" alt="product 3">
                             <span class="new">new</span>
                             <span class="discount">sale</span>
@@ -358,7 +418,7 @@
                     </a>
                 </div>
 
-                <div class="my-car-item">
+                <div class="my-car-item wow animate__fadeInUpBig" data-wow-duration="2.3s">
                     <a href="#">
                         <div class="mycar-img-box">
                             <img class="img-responsive" src="images/bestsellers/4.png" alt="product 4">
@@ -413,12 +473,15 @@
             <div class="row">
 
                 <div class="col-xs-12">
-                    <img class="img-responsive" src="images/periodoffer/1.png">
-                    <div class="big-offer-content">
-                        <h3>limited period</h3>
-                        <hr>
-                        <h2>sale up to 25%<br>for all sofas</h2>
-                        <a href="#">shop now</a>
+                    <div class="offer-box wow animate__zoomIn" data-wow-duration="2s">
+                        <div class="offer-back"></div>
+                        <img class="img-responsive" src="images/periodoffer/1.png">
+                        <div class="big-offer-content">
+                            <h3 class="wow animate__zoomIn" data-wow-duration="2.2s">limited period</h3>
+                            <hr class="wow animate__zoomIn" data-wow-duration="2.2s">
+                            <h2 class="wow animate__zoomIn" data-wow-duration="2.4s">sale up to 25%<br>for all sofas</h2>
+                            <a class="wow animate__zoomIn" data-wow-duration="2.6s" href="#">shop now</a>
+                        </div>
                     </div>
                 </div>
 
@@ -429,22 +492,98 @@
         <div class="best-sellers">
 
             <ul class="mo-tabs list-unstyled" role="tablist">
-                <li role="presentation" class="active"><a href="#living" aria-controls="home" role="tab" data-toggle="tab">living</a></li>
-                <li role="presentation"><a href="#dining" aria-controls="profile" role="tab" data-toggle="tab">dining</a></li>
-                <li role="presentation"><a href="#bedroom" aria-controls="messages" role="tab" data-toggle="tab">bedroom</a></li>
-                <li role="presentation"><a href="#kids" aria-controls="settings" role="tab" data-toggle="tab">kids</a></li>
-                <li role="presentation"><a href="#outdoor" aria-controls="settings" role="tab" data-toggle="tab">outdoor</a></li>
+                <li role="presentation" class="active wow animate__fadeInLeftBig" data-wow-duration="2.8s"><a href="#living" aria-controls="home" role="tab" data-toggle="tab">living</a></li>
+                <li role="presentation" class="wow animate__fadeInLeftBig" data-wow-duration="2.6s"><a href="#dining" aria-controls="profile" role="tab" data-toggle="tab">dining</a></li>
+                <li role="presentation" class="wow animate__fadeInLeftBig" data-wow-duration="2.4s"><a href="#bedroom" aria-controls="messages" role="tab" data-toggle="tab">bedroom</a></li>
+                <li role="presentation" class="wow animate__fadeInLeftBig" data-wow-duration="2.2s"><a href="#kids" aria-controls="settings" role="tab" data-toggle="tab">kids</a></li>
+                <li role="presentation" class="wow animate__fadeInLeftBig" data-wow-duration="2s"><a href="#outdoor" aria-controls="settings" role="tab" data-toggle="tab">outdoor</a></li>
             </ul>
             <div class="tab-content">
                 <div id="living" role="tabpanel" class="tab-pane active my-car-item">
                     <div class="owl-carousel owl-theme">
+
+                        <a href="#">
+                            <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2s">
+                                <img class="img-responsive" src="images/gallary2/4.png" alt="product 4">
+                                <span class="new">new</span>
+                                <span class="discount">sale</span>
+                            </div>
+                            <div class="mycar-text-box wow animate__fadeInUpBig" data-wow-duration="2s">
+                                <p class="item-name">Dummy Product Name</p>
+                                <div class="price-box">
+                                    <p class="item-price">200 sar <span>250 sar</span></p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2.1s">
+                                <img class="img-responsive" src="images/gallary2/2.png" alt="product 2">
+                                <span class="new">new</span>
+                                <span class="discount">sale</span>
+                            </div>
+                            <div class="mycar-text-box wow animate__fadeInUpBig" data-wow-duration="2.1s">
+                                <p class="item-name">Dummy Product Name</p>
+                                <div class="price-box">
+                                    <p class="item-price">200 sar <span>250 sar</span></p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2.2s">
+                                <img class="img-responsive" src="images/gallary2/3.png" alt="product 3">
+                                <span class="new">new</span>
+                                <span class="discount">sale</span>
+                            </div>
+                            <div class="mycar-text-box  wow animate__fadeInUpBig" data-wow-duration="2.2s">
+                                <p class="item-name">Dummy Product Name</p>
+                                <div class="price-box">
+                                    <p class="item-price">200 sar <span>250 sar</span></p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2.3s">
+                                <img class="img-responsive" src="images/gallary2/4.png" alt="product 4">
+                                <span class="new">new</span>
+                                <span class="discount">sale</span>
+                            </div>
+                            <div class="mycar-text-box wow animate__fadeInUpBig" data-wow-duration="2.3s">
+                                <p class="item-name">Dummy Product Name</p>
+                                <div class="price-box">
+                                    <p class="item-price">200 sar <span>250 sar</span></p>
+                                </div>
+                            </div>
+                        </a>
+
                         <a href="#">
                             <div class="mycar-img-box">
+                                <img class="img-responsive" src="images/gallary2/2.png" alt="product 2">
+                                <span class="new">new</span>
+                                <span class="discount">sale</span>
+                            </div>
+                            <div class="mycar-text-box">
+                                <p class="item-name">Dummy Product Name</p>
+                                <div class="price-box">
+                                    <p class="item-price">200 sar <span>250 sar</span></p>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="dining" role="tabpanel" class="tab-pane my-car-item" data-delay="0">
+                    <div class="owl-carousel owl-theme">
+                        <a href="#">
+                            <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2s">
                                 <img class="img-responsive" src="images/bestsellers/1.png" alt="product 1">
                                 <span class="new">new</span>
                                 <span class="discount">sale</span>
                             </div>
-                            <div class="mycar-text-box">
+                            <div class="mycar-text-box wow animate__fadeInUpBig" data-wow-duration="2s">
                                 <p class="item-name">Dummy Product Name</p>
                                 <div class="price-box">
                                     <p class="item-price">200 sar <span>250 sar</span></p>
@@ -452,12 +591,12 @@
                             </div>
                         </a>
                         <a href="#">
-                            <div class="mycar-img-box">
+                            <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2.1s">
                                 <img class="img-responsive" src="images/bestsellers/2.png" alt="product 2">
                                 <span class="new">new</span>
                                 <span class="discount">sale</span>
                             </div>
-                            <div class="mycar-text-box">
+                            <div class="mycar-text-box  wow animate__fadeInUpBig" data-wow-duration="2.1s">
                                 <p class="item-name">Dummy Product Name</p>
                                 <div class="price-box">
                                     <p class="item-price">200 sar <span>250 sar</span></p>
@@ -465,12 +604,12 @@
                             </div>
                         </a>
                         <a href="#">
-                            <div class="mycar-img-box">
+                            <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2.2s">
                                 <img class="img-responsive" src="images/bestsellers/3.png" alt="product 3">
                                 <span class="new">new</span>
                                 <span class="discount">sale</span>
                             </div>
-                            <div class="mycar-text-box">
+                            <div class="mycar-text-box wow animate__fadeInUpBig" data-wow-duration="2.2s">
                                 <p class="item-name">Dummy Product Name</p>
                                 <div class="price-box">
                                     <p class="item-price">200 sar <span>250 sar</span></p>
@@ -478,12 +617,12 @@
                             </div>
                         </a>
                         <a href="#">
-                            <div class="mycar-img-box">
+                            <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2.3s">
                                 <img class="img-responsive" src="images/bestsellers/4.png" alt="product 4">
                                 <span class="new">new</span>
                                 <span class="discount">sale</span>
                             </div>
-                            <div class="mycar-text-box">
+                            <div class="mycar-text-box wow animate__fadeInUpBig" data-wow-duration="2.3s">
                                 <p class="item-name">Dummy Product Name</p>
                                 <div class="price-box">
                                     <p class="item-price">200 sar <span>250 sar</span></p>
@@ -506,15 +645,54 @@
                     </div>
                 </div>
 
-                <div id="dining" role="tabpanel" class="tab-pane my-car-item">
+                <div id="bedroom" role="tabpanel" class="tab-pane my-car-item" data-delay="0">
                     <div class="owl-carousel owl-theme">
                         <a href="#">
-                            <div class="mycar-img-box">
-                                <img class="img-responsive" src="images/bestsellers/2.png" alt="product 2">
+                            <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2s">
+                                <img class="img-responsive" src="images/gallary2/4.png" alt="product 4">
                                 <span class="new">new</span>
                                 <span class="discount">sale</span>
                             </div>
-                            <div class="mycar-text-box">
+                            <div class="mycar-text-box wow animate__fadeInUpBig" data-wow-duration="2s">
+                                <p class="item-name">Dummy Product Name</p>
+                                <div class="price-box">
+                                    <p class="item-price">200 sar <span>250 sar</span></p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2.1s">
+                                <img class="img-responsive" src="images/gallary2/2.png" alt="product 2">
+                                <span class="new">new</span>
+                                <span class="discount">sale</span>
+                            </div>
+                            <div class="mycar-text-box wow animate__fadeInUpBig" data-wow-duration="2.1s">
+                                <p class="item-name">Dummy Product Name</p>
+                                <div class="price-box">
+                                    <p class="item-price">200 sar <span>250 sar</span></p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2.2s">
+                                <img class="img-responsive" src="images/gallary2/3.png" alt="product 3">
+                                <span class="new">new</span>
+                                <span class="discount">sale</span>
+                            </div>
+                            <div class="mycar-text-box wow animate__fadeInUpBig" data-wow-duration="2.2s">
+                                <p class="item-name">Dummy Product Name</p>
+                                <div class="price-box">
+                                    <p class="item-price">200 sar <span>250 sar</span></p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2.3s">
+                                <img class="img-responsive" src="images/gallary2/4.png" alt="product 4">
+                                <span class="new">new</span>
+                                <span class="discount">sale</span>
+                            </div>
+                            <div class="mycar-text-box wow animate__fadeInUpBig" data-wow-duration="2.3s">
                                 <p class="item-name">Dummy Product Name</p>
                                 <div class="price-box">
                                     <p class="item-price">200 sar <span>250 sar</span></p>
@@ -523,46 +701,7 @@
                         </a>
                         <a href="#">
                             <div class="mycar-img-box">
-                                <img class="img-responsive" src="images/bestsellers/3.png" alt="product 3">
-                                <span class="new">new</span>
-                                <span class="discount">sale</span>
-                            </div>
-                            <div class="mycar-text-box">
-                                <p class="item-name">Dummy Product Name</p>
-                                <div class="price-box">
-                                    <p class="item-price">200 sar <span>250 sar</span></p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="mycar-img-box">
-                                <img class="img-responsive" src="images/bestsellers/4.png" alt="product 4">
-                                <span class="new">new</span>
-                                <span class="discount">sale</span>
-                            </div>
-                            <div class="mycar-text-box">
-                                <p class="item-name">Dummy Product Name</p>
-                                <div class="price-box">
-                                    <p class="item-price">200 sar <span>250 sar</span></p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="mycar-img-box">
-                                <img class="img-responsive" src="images/bestsellers/1.png" alt="product 1">
-                                <span class="new">new</span>
-                                <span class="discount">sale</span>
-                            </div>
-                            <div class="mycar-text-box">
-                                <p class="item-name">Dummy Product Name</p>
-                                <div class="price-box">
-                                    <p class="item-price">200 sar <span>250 sar</span></p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="mycar-img-box">
-                                <img class="img-responsive" src="images/bestsellers/3.png" alt="product 3">
+                                <img class="img-responsive" src="images/gallary2/2.png" alt="product 2">
                                 <span class="new">new</span>
                                 <span class="discount">sale</span>
                             </div>
@@ -576,41 +715,54 @@
                     </div>
                 </div>
 
-                <div id="bedroom" role="tabpanel" class="tab-pane my-car-item">
+                <div id="kids" role="tabpanel" class="tab-pane my-car-item" data-delay="0">
                     <div class="owl-carousel owl-theme">
                         <a href="#">
-                            <div class="mycar-img-box">
-                                <img class="img-responsive" src="images/bestsellers/3.png" alt="product 3">
-                                <span class="new">new</span>
-                                <span class="discount">sale</span>
-                            </div>
-                            <div class="mycar-text-box">
-                                <p class="item-name">Dummy Product Name</p>
-                                <div class="price-box">
-                                    <p class="item-price">200 sar <span>250 sar</span></p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="mycar-img-box">
-                                <img class="img-responsive" src="images/bestsellers/4.png" alt="product 4">
-                                <span class="new">new</span>
-                                <span class="discount">sale</span>
-                            </div>
-                            <div class="mycar-text-box">
-                                <p class="item-name">Dummy Product Name</p>
-                                <div class="price-box">
-                                    <p class="item-price">200 sar <span>250 sar</span></p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="mycar-img-box">
+                            <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2s">
                                 <img class="img-responsive" src="images/bestsellers/1.png" alt="product 1">
                                 <span class="new">new</span>
                                 <span class="discount">sale</span>
                             </div>
-                            <div class="mycar-text-box">
+                            <div class="mycar-text-box wow animate__fadeInUpBig" data-wow-duration="2s">
+                                <p class="item-name">Dummy Product Name</p>
+                                <div class="price-box">
+                                    <p class="item-price">200 sar <span>250 sar</span></p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2.1s">
+                                <img class="img-responsive" src="images/bestsellers/2.png" alt="product 2">
+                                <span class="new">new</span>
+                                <span class="discount">sale</span>
+                            </div>
+                            <div class="mycar-text-box wow animate__fadeInUpBig" data-wow-duration="2.1s">
+                                <p class="item-name">Dummy Product Name</p>
+                                <div class="price-box">
+                                    <p class="item-price">200 sar <span>250 sar</span></p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2.2s">
+                                <img class="img-responsive" src="images/bestsellers/3.png" alt="product 3">
+                                <span class="new">new</span>
+                                <span class="discount">sale</span>
+                            </div>
+                            <div class="mycar-text-box wow animate__fadeInUpBig" data-wow-duration="2.2s">
+                                <p class="item-name">Dummy Product Name</p>
+                                <div class="price-box">
+                                    <p class="item-price">200 sar <span>250 sar</span></p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2.3s">
+                                <img class="img-responsive" src="images/bestsellers/4.png" alt="product 4">
+                                <span class="new">new</span>
+                                <span class="discount">sale</span>
+                            </div>
+                            <div class="mycar-text-box wow animate__fadeInUpBig" data-wow-duration="2.3s">
                                 <p class="item-name">Dummy Product Name</p>
                                 <div class="price-box">
                                     <p class="item-price">200 sar <span>250 sar</span></p>
@@ -620,19 +772,6 @@
                         <a href="#">
                             <div class="mycar-img-box">
                                 <img class="img-responsive" src="images/bestsellers/2.png" alt="product 2">
-                                <span class="new">new</span>
-                                <span class="discount">sale</span>
-                            </div>
-                            <div class="mycar-text-box">
-                                <p class="item-name">Dummy Product Name</p>
-                                <div class="price-box">
-                                    <p class="item-price">200 sar <span>250 sar</span></p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="mycar-img-box">
-                                <img class="img-responsive" src="images/bestsellers/4.png" alt="product 4">
                                 <span class="new">new</span>
                                 <span class="discount">sale</span>
                             </div>
@@ -646,15 +785,15 @@
                     </div>
                 </div>
 
-                <div id="kids" role="tabpanel" class="tab-pane my-car-item">
+                <div id="outdoor" role="tabpanel" class="tab-pane my-car-item" data-delay="0">
                     <div class="owl-carousel owl-theme">
                         <a href="#">
-                            <div class="mycar-img-box">
-                                <img class="img-responsive" src="images/bestsellers/4.png" alt="product 4">
+                            <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2s">
+                                <img class="img-responsive" src="images/gallary2/4.png" alt="product 4">
                                 <span class="new">new</span>
                                 <span class="discount">sale</span>
                             </div>
-                            <div class="mycar-text-box">
+                            <div class="mycar-text-box wow animate__fadeInUpBig" data-wow-duration="2s">
                                 <p class="item-name">Dummy Product Name</p>
                                 <div class="price-box">
                                     <p class="item-price">200 sar <span>250 sar</span></p>
@@ -662,12 +801,38 @@
                             </div>
                         </a>
                         <a href="#">
-                            <div class="mycar-img-box">
-                                <img class="img-responsive" src="images/bestsellers/1.png" alt="product 1">
+                            <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2.1s">
+                                <img class="img-responsive" src="images/gallary2/2.png" alt="product 2">
                                 <span class="new">new</span>
                                 <span class="discount">sale</span>
                             </div>
-                            <div class="mycar-text-box">
+                            <div class="mycar-text-box wow animate__fadeInUpBig" data-wow-duration="2.1s">
+                                <p class="item-name">Dummy Product Name</p>
+                                <div class="price-box">
+                                    <p class="item-price">200 sar <span>250 sar</span></p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2.2s">
+                                <img class="img-responsive" src="images/gallary2/3.png" alt="product 3">
+                                <span class="new">new</span>
+                                <span class="discount">sale</span>
+                            </div>
+                            <div class="mycar-text-box wow animate__fadeInUpBig" data-wow-duration="2.2s">
+                                <p class="item-name">Dummy Product Name</p>
+                                <div class="price-box">
+                                    <p class="item-price">200 sar <span>250 sar</span></p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="mycar-img-box wow animate__fadeInUpBig" data-wow-duration="2.3s">
+                                <img class="img-responsive" src="images/bestsellers/4.png" alt="product 4">
+                                <span class="new">new</span>
+                                <span class="discount">sale</span>
+                            </div>
+                            <div class="mycar-text-box wow animate__fadeInUpBig" data-wow-duration="2.3s">
                                 <p class="item-name">Dummy Product Name</p>
                                 <div class="price-box">
                                     <p class="item-price">200 sar <span>250 sar</span></p>
@@ -677,102 +842,6 @@
                         <a href="#">
                             <div class="mycar-img-box">
                                 <img class="img-responsive" src="images/bestsellers/2.png" alt="product 2">
-                                <span class="new">new</span>
-                                <span class="discount">sale</span>
-                            </div>
-                            <div class="mycar-text-box">
-                                <p class="item-name">Dummy Product Name</p>
-                                <div class="price-box">
-                                    <p class="item-price">200 sar <span>250 sar</span></p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="mycar-img-box">
-                                <img class="img-responsive" src="images/bestsellers/3.png" alt="product 3">
-                                <span class="new">new</span>
-                                <span class="discount">sale</span>
-                            </div>
-                            <div class="mycar-text-box">
-                                <p class="item-name">Dummy Product Name</p>
-                                <div class="price-box">
-                                    <p class="item-price">200 sar <span>250 sar</span></p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="mycar-img-box">
-                                <img class="img-responsive" src="images/bestsellers/1.png" alt="product 1">
-                                <span class="new">new</span>
-                                <span class="discount">sale</span>
-                            </div>
-                            <div class="mycar-text-box">
-                                <p class="item-name">Dummy Product Name</p>
-                                <div class="price-box">
-                                    <p class="item-price">200 sar <span>250 sar</span></p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div id="outdoor" role="tabpanel" class="tab-pane my-car-item">
-                    <div class="owl-carousel owl-theme">
-                        <a href="#">
-                            <div class="mycar-img-box">
-                                <img class="img-responsive" src="images/bestsellers/2.png" alt="product 2">
-                                <span class="new">new</span>
-                                <span class="discount">sale</span>
-                            </div>
-                            <div class="mycar-text-box">
-                                <p class="item-name">Dummy Product Name</p>
-                                <div class="price-box">
-                                    <p class="item-price">200 sar <span>250 sar</span></p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="mycar-img-box">
-                                <img class="img-responsive" src="images/bestsellers/4.png" alt="product 4">
-                                <span class="new">new</span>
-                                <span class="discount">sale</span>
-                            </div>
-                            <div class="mycar-text-box">
-                                <p class="item-name">Dummy Product Name</p>
-                                <div class="price-box">
-                                    <p class="item-price">200 sar <span>250 sar</span></p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="mycar-img-box">
-                                <img class="img-responsive" src="images/bestsellers/1.png" alt="product 1">
-                                <span class="new">new</span>
-                                <span class="discount">sale</span>
-                            </div>
-                            <div class="mycar-text-box">
-                                <p class="item-name">Dummy Product Name</p>
-                                <div class="price-box">
-                                    <p class="item-price">200 sar <span>250 sar</span></p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="mycar-img-box">
-                                <img class="img-responsive" src="images/bestsellers/3.png" alt="product 3">
-                                <span class="new">new</span>
-                                <span class="discount">sale</span>
-                            </div>
-                            <div class="mycar-text-box">
-                                <p class="item-name">Dummy Product Name</p>
-                                <div class="price-box">
-                                    <p class="item-price">200 sar <span>250 sar</span></p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="mycar-img-box">
-                                <img class="img-responsive" src="images/bestsellers/4.png" alt="product 4">
                                 <span class="new">new</span>
                                 <span class="discount">sale</span>
                             </div>
@@ -797,28 +866,28 @@
         <div class="container">
             <div class="row">
 
-                <div class="feature col-md-3 col-xs-12">
+                <div class="feature col-md-3 col-xs-12 wow animate__fadeInUpBig" data-wow-duration="2s">
                     <div class="fe-head">
                         <span class="icon lnr lnr-rocket"></span>
                         <span class="feature-name">fast delivery</span>
                     </div>
                     <p>fast delivery covering all kingdom regions</p>
                 </div>
-                <div class="feature col-md-3 col-xs-12">
+                <div class="feature col-md-3 col-xs-12 wow animate__fadeInUpBig" data-wow-duration="2.2s">
                     <div class="fe-head">
                         <span class="icon lnr lnr-thumbs-up"></span>
                         <span class="feature-name">quality guarantee</span>
                     </div>
                     <p>Well designed and manufuctured products</p>
                 </div>
-                <div class="feature col-md-3 col-xs-12">
+                <div class="feature col-md-3 col-xs-12 wow animate__fadeInUpBig" data-wow-duration="2.4s">
                     <div class="fe-head">
                         <span class="icon lnr lnr-sync"></span>
                         <span class="feature-name">14 days return</span>
                     </div>
                     <p>Simply return it within two weeks for an exchange</p>
                 </div>
-                <div class="feature col-md-3 col-xs-12">
+                <div class="feature col-md-3 col-xs-12 wow animate__fadeInUpBig" data-wow-duration="2.6s">
                     <div class="fe-head">
                         <span class="icon lnr lnr-lock"></span>
                         <span class="feature-name">100% secure payment</span>
@@ -836,9 +905,9 @@
 
                 <div class="row">
 
-                    <div class="element col-md-2 col-sm-4 col-xs-12">
-                        <h3>information</h3>
-                        <ul class="element footer-links list-unstyled">
+                    <div class="element one col-md-2 col-xs-12">
+                        <h3 class="wow animate__fadeInUpBig" data-wow-duration="2s">information</h3>
+                        <ul class="element footer-links list-unstyled wow animate__fadeInUpBig" data-wow-duration="2s">
                             <li><a href="#">about us</a></li>
                             <li><a href="#">delivery information</a></li>
                             <li><a href="#">privacy policy</a></li>
@@ -846,18 +915,18 @@
                         </ul>
                     </div>
 
-                    <div class="element col-md-2 col-sm-4 col-xs-12">
-                        <h3>customer service</h3>
-                        <ul class="footer-links list-unstyled">
+                    <div class="element two col-md-2 col-xs-12">
+                        <h3 class="wow animate__fadeInUpBig" data-wow-duration="2.1s">customer service</h3>
+                        <ul class="footer-links list-unstyled wow animate__fadeInUpBig" data-wow-duration="2.1s">
                             <li><a href="#">contact us</a></li>
                             <li><a href="#">returns</a></li>
                             <li><a href="#">site map</a></li>
                         </ul>
                     </div>
 
-                    <div class="element col-md-2 col-sm-4 col-xs-12">
-                        <h3>extras</h3>
-                        <ul class="footer-links list-unstyled">
+                    <div class="element three col-md-2 col-xs-12">
+                        <h3 class="wow animate__fadeInUpBig" data-wow-duration="2.2s">extras</h3>
+                        <ul class="footer-links list-unstyled wow animate__fadeInUpBig" data-wow-duration="2.2s">
                             <li><a href="#">brands</a></li>
                             <li><a href="#">gift certificates</a></li>
                             <li><a href="#">affiliate</a></li>
@@ -865,9 +934,9 @@
                         </ul>
                     </div>
 
-                    <div class="element col-md-2 col-sm-12 col-xs-12">
-                        <h3>my account</h3>
-                        <ul class="footer-links list-unstyled">
+                    <div class="element four col-md-2 col-xs-12">
+                        <h3 class="wow animate__fadeInUpBig" data-wow-duration="2.3s">my account</h3>
+                        <ul class="footer-links list-unstyled wow animate__fadeInUpBig" data-wow-duration="2.3s">
                             <li><a href="#">my account</a></li>
                             <li><a href="#">order history</a></li>
                             <li><a href="#">wish list</a></li>
@@ -875,13 +944,13 @@
                         </ul>
                     </div>
 
-                    <div class="element col-md-4 col-sm-12 col-xs-12">
-                        <h3>newslitter</h3>
-                        <div class="your-mail">
+                    <div class="element five col-md-4 col-xs-12">
+                        <h3 class="wow animate__fadeInUpBig" data-wow-duration="2.4s">newslitter</h3>
+                        <div class="your-mail wow animate__fadeInUpBig" data-wow-duration="2.4s">
                             <input type="text" placeholder="Enter Your E-Mail">
                             <button><span class="lnr lnr-arrow-right"></span></button>
                         </div>
-                        <ul class="social-icons list-unstyled">
+                        <ul class="social-icons list-unstyled wow animate__fadeInUpBig" data-wow-duration="2.5s">
                             <li><a href="#"><i class="fab fa-facebook-f fa-lg"></i></a></li>
                             <li><a href="#"><i class="fab fa-twitter fa-lg"></i></a></li>
                             <li><a href="#"><i class="fab fa-instagram fa-lg"></i></a></li>
@@ -895,11 +964,14 @@
 
             <div class="footer-bottom">
                 <div class="copyrightes">
-                    <p>Copyrights &copy; 2020 Kazamart - Designed & Developed by</p>
-                    <img src="images/footer/tasawk.png">
+                    <p class="wow animate__fadeInUpBig" data-wow-duration="2.6s">Copyrights &copy; 2020 Kazamart<br>- Designed & Developed by
+                        <a class="tasawk" href="https://tasawk.com.sa/">
+                            <img src="images/footer/tasawk.png">
+                        </a>
+                    </p>
                 </div>
                 <div class="payment">
-                    <img src="images/footer/payment.png">
+                    <img class="wow animate__fadeInUpBig" data-wow-duration="2.6s" src="images/footer/payment.png">
                 </div>
             </div>
         </div>
@@ -914,31 +986,6 @@
 
     <!-------------------------------- Small List Section Start --------------------------------->
     <div class="small-list">
-
-        <div class="user-lang">
-            <ul class="list-unstyled">
-
-                <li class="user-config"><span><i class="far fa-user fa-lg"></i> User Configration</span>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Log In</a></li>
-                        <li><a href="#">Sign Up</a></li>
-                    </ul>
-                </li>
-
-                <li class="lang"><span>Language</span>
-                    <ul class="list-unstyled">
-                        <li><a href="#">English</a></li>
-                        <li><a href="#">Arabic</a></li>
-                    </ul>
-                </li>
-                <li class="curr"><span>Currency</span>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Saudi Riyal</a></li>
-                        <li><a href="#">Egyption Bound</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
 
         <div class="small-nav">
             <ul class="small-nav-list list-unstyled">
@@ -960,7 +1007,60 @@
                 <li><a href="#"><span>Need Help?</span></a></li>
             </ul>
         </div>
+
+        <div class="user-lang">
+            <ul class="list-unstyled">
+                <li class="lang"><span>Language</span>
+                    <ul class="list-unstyled">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Arabic</a></li>
+                    </ul>
+                </li>
+                <li class="curr"><span>Currency</span>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Saudi Riyal</a></li>
+                        <li><a href="#">Egyption Bound</a></li>
+                        <li><a href="#">Usa Dollar</a></li>
+                    </ul>
+                </li>
+                <li class="user-config"><span><i class="far fa-user fa-lg"></i> User Configuration</span>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Log In</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
     </div>
+
+    <!---------------------- black back for small screens mune ------------------------>
+    <div class="black-back-small"></div>
+
+    <!-----------------------------  small screens search ------------------------------>
+    <div class="small-search">
+        <button class="close"><i class="fas fa-times"></i></button>
+        <div class="center-search">
+            <div class="small-search-bar">
+                <select class="small-cat-button selectpicker" title="all categories">
+                    <option>bedroom</option>
+                    <option>sofas</option>
+                    <option>dining room</option>
+                    <option>rest room</option>
+                    <option>armchairs</option>
+                    <option>librarry room</option>
+                    <option>chairs</option>
+                    <option>tables</option>
+                    <option>living room</option>
+                    <option>kids room</option>
+                    <option>outroom</option>
+                </select>
+                <input type="text" placeholder="Search">
+                <button class="small-search-button"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+
 
 
 
@@ -970,6 +1070,8 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap-select.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
